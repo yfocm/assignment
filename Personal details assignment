@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Details Form</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+* { box-sizing: border-box; }
+
+html{
+    scroll-behavior:smooth;
+    align-items:center;
+    justify-content:center;
+    font-family: "Raleway", arial;
+    font-weight:2em;
+    
+    --bg:#FCFCFC;
+    --bg-panel:#EBEBEB;
+    --color-headings:#0077FF;
+    --color-text:#333333;
+}
+html[data-theme='dark']{
+    --bg:#333333;
+    --bg-panel:#434343;
+    --color-headings:#3694FF;
+    --color-text:#858585;
+}
+body {
+    margin:0 0 55px 0;
+    background-color:var(--bg);
+    font-family: "Raleway", arial;
+    background-image:url('https://source.unsplash.com/weekly?grandient');
+    background-position:fixed;
+    background-repeat:norepeat;
+    background-size:cover;
+    }
+h2
+{
+    text-align:center;
+}
+.container
+{
+    margin-right:10px;
+    position:relative;
+    display:flex;
+    justify-content:sapce-around;
+    align-items:center;
+    border-radius:2px;
+    flex-wrap:wrap;
+    width:90px;
+}
+.container form
+{
+    width:300px;
+    margin:15px;
+    margin-right:10px;
+    padding:40px 30px;
+    background:#ebf5fc;
+    border-radius:9px;
+    box-shadow:-6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,.1)
+}
+.conatiner form .user
+{
+    border-radius:50%;
+}
+.container form .user img
+{
+    display:block;
+    width:8rem;
+    height:8rem;
+    margin:auto;
+    border-radius:70%;
+    align-items:center;
+    justify-content:center;
+    left:;
+}
+select
+{
+    padding:10px;
+    border:none;
+    font-size:1rem;
+}
+input[type="date"], input[type="time"], input[type="file"]
+{
+    padding:10px;
+    border:none;
+    font-size:1rem;
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"]
+{
+    padding:10px;
+    border:none;
+    font-size:1rem;
+    background:transparent;
+    border-bottom:2px solid #0013a8;
+}
+button
+{
+    background:transparent;
+    border-color:#0013a8;
+    padding:10px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:1rem;
+    border-radius:6px;
+}
+        </style>
+    </head>
+    <body>
+      <h2>Personal Imformation</h2>
+      <div class="container">
+      <form action="https://www.yfoc.in">
+      <div class="user">
+         <img src="https://i.ibb.co/nQ9DRWT/photo-1508214751196-bcfd4ca60f91.jpg" alt="photo-1508214751196-bcfd4ca60f91" border="0">
+      </div><br/><br/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="enter your name" required/><br/><br/>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="enter a valid e-mail address" required/><br/><br/>
+      <label for="date">Date Of Inception:</label>
+      <input type="date" id="date"/><br/><br/>
+      <label for="time">Office Time:</label>
+      <input type="time" id="name"/><br/><br/>
+      <label for="number">Number Of Years Completed:</label>
+      <input type="number" id="number" min="1" max="50"/><br/><br/>
+      <label for="phone">Office Phone Number:</label>
+      <input type="tel" id="phone" pattern="[0-9]{2}-[0-9]{10}" placeholder="91-0123456789"/><br/><br/>
+      <label for="state">Select State:</label>
+       <select list="states" id="state"/>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Kolkata">Kolkata</option>
+  <option value="Gujrat">Gujrat</option>
+  <option value="Rajasthan">Rajasthan</option>
+  <option value="Maharashtra"></option>
+  <option value="Maharashtra"></option>
+  <option value="Maharashtra"></option>
+  </select><br/><br/>
+     <label for="file">Upload Signature:</label>
+     <input type="file" id="file"/><br/><br/>
+     <button id="submit">Submit</button><br/><br/><br/>
+     <p>©2020melwynpeter | No Rights Reserved</p>
+           </form>
+       </div>
+    </body>
+</html>
