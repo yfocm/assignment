@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>a pattern that matches email addresses</title>
+</head>
+<body>
+<h2>A Pattern That Matches Email Addresses</h2>
+<h3>Eg: mel-work@gmail.com</h3>
+<h3>Click On The Button To Find Out Whether The String A Valid Emial Address Or Not</h3>
+<form id="f1">
+	<button id="result" onclick="start()">Result</button>
+
+</form>
+		<script type="text/javascript">
+			function start() {
+
+
+			function validate(str) {
+				var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				var str = document.f1.t1.value;
+				if(format.test(str))
+				{
+					document.write("Valid email address!")
+				}
+				else
+				{
+					document.write("You have entered an invalid emial address!")
+				}
+			}
+
+
+			validate('mel-work@gmail.com')
+			}
+		</script>
+</form>
+</body>
+</html>
