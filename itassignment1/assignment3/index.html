@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javacript function that reverses a number</title>
+</head>
+<body>
+<h2>Javascript Function That Reverses A Number</h2>
+<h3>Ex. 32243</h3>
+<button id="result" onclick="reverse()"></button>
+
+
+<script type="text/javascript">
+	function reverse(x) {
+		x = x + "";
+		return x.split("").reverse().join("");
+	}
+	document.write(reverse(32243));
+</script>
+</body>
+</html>
