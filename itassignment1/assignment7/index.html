@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accept the username and display the name through php echo statement</title>
+</head>
+<body>
+	<h2>Accept The Username And Display The Name Through Php Echo Statement</h2>
+	<form method='POST'>
+		<h2>PLease input your name:</h2>
+		<input type="text" name="name">
+		<input type="submit" value="Submit Name">
+	</form>
+	<?php
+	$name = $_POST['name'];
+	echo "<h3> Praise God $name </h3>"
+	?>
+</body>
+</html>
