@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Javacript function that reverses a number</title>
+	<title>the average of the given students and its correspopmding average grade</title>
 </head>
 <body>
-<h2>Javascript Function That Reverses A Number</h2>
-<h3>Ex. 32243</h3>
-<button id="result" onclick="reverse()"></button>
+<h2>The Average Of The Given Students And Its Corresponding Average Grade</h2>
+<button id="result" onclick="average()">Result</button>
 
 
 <script type="text/javascript">
-	function reverse(x) {
-		x = x + "";
-		return x.split("").reverse().join("");
+	function average() {
+		var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishita', 95], ['Thomas', 66]];
+
+		var Averagemarks = 0;
+		var i
+
+		for (i=0; i < students.length; i++) {
+			Averagemarks += students[i][1];
+			var average = (Averagemarks/students.length);
+		}
+
+
+	document.write("Average grade: " + (Averagemarks)/students.length);
+
+	if (average < 60){
+		document.write("Grade : F");
 	}
-	document.write(reverse(32243));
+	else if (average < 70){
+		document.write("Grade : D");
+	}
+	else if (average < 80){
+		document.write("Grade : C");
+	}
+	else if (average < 90){
+		document.write("Grade : B");
+	}
+	else if (average < 100){
+		document.write("Grade : A");
+	}
+	}
 </script>
 </body>
 </html>
