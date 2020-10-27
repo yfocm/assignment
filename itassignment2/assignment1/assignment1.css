@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+#navbar
+{
+	position: relative;
+	margin: 0;
+	padding: 20px;
+	background: #
+	position: fixed;
+}
+.nav
+{
+	width: 1236px;
+	height: 20px;
+}
+.nav-links
+{
+	position: relative;
+	margin: 0;
+	margin-top: 13px;
+	padding-left: 0;
+	color: #000000;
+	list-style: none;
+	display: flex;
+	float: right;
+}
+.logo
+{
+	width: 120px;
+	height: 0;
+}
+li
+{
+	margin-left: 20px;
+}
+a
+{
+	color: #000000;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #eab456;
+}
+.container
+{
+	width: 100%;
+	margin: 0 auto;
+	background: #f9f9f9;
+	font-size: 24px;
+	padding: 25px;
+}
+.parallax
+{
+	background: url('https://source.unsplash.com/weekly?water') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+.card-box
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card {
+	margin: 20px;
+  padding: 16px 16px;
+  width: 380px;
+}
+.card-text
+{
+	margin: 20px;
+}
+.card img
+{
+	width: 340px;
+}
+@media screen and (max-width: 800px) {
+  .card-box {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .card-box {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+p
+{
+	margin-top: 20px;
+}
+#service
+{
+	margin: 20px;
+}
+.progress
+{
+	margin: 20px;
+	padding: 20px;
+	display: flex;
+}
+.progress img
+{
+	width: 400px;
+	height: 360px;
+}
+.progress-text
+{
+	margin-left: 20px;
+	padding-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .progress {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .progress {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Container holding the image and the text */
+.contact-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-img img
+{
+	height: 600px;
+}
+#contactus
+{
+	padding: 10px;
+	font-size: 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#portfolio
+{
+	margin: 20px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.teammembers-img
+{
+	display: flex;
+}
+@media screen and (max-width: 800px) {
+  .teammembers-img {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .teammembers-img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.card
+{
+	text-align: center;
+}
+.card-subtitle
+{
+	color:#29e6d3;
+}
+#contact
+{
+	display: flex;
+	margin: 20px;
+}
+.input-container
+{
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.icon
+{
+	padding: 10px;
+	background: blue;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+}
+.input-field
+{
+	width: 50%;
+	padding: 10px;
+	outline: none;
+}
+.input-field:focus
+{
+	border: 2px solid blue;
+}
+.btn
+{
+	background-color: blue;
+	color: white;
+	padding: 15px 20px;
+	border: none;
+	cursor: pointer;
+	width: 50%;
+	opacity: 0.9;
+}
+.btn:hover
+{
+	opacity: 1;
+}
