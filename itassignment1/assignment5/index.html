@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jvacript function that accepts a number as a parameter and check whether the number is prime or not</title>
+</head>
+<body>
+<h2>Javascript Function That Accepts A Number As A Parameter And Check Whether the Number Is Prime Or Not</h2>
+<form name="f1">
+	Enter A Value : <input type="text" name="t1"><br><br>
+	<input type="button" name="b1" value="Click to check whether Prime">
+<button id="result" onclick="prime()">Result</button>
+
+
+<script type="text/javascript">
+function prime() {
+	var str1, str2 = true, i;
+	str1 = document.f1.t1.value;
+	str1 = parseInt(str1)
+	for(i = 2; i <= str1 -1; i++)
+	{
+		if(str1 % i == 0)
+			{
+				str2 = false;
+				break;
+			}
+	}
+	if(str2 == true)
+	{
+		alert('No is Prime');
+	}
+	else
+	{
+		alert('No is not Prime')
+	}
+}	
+</script>
+</body>
+</html>
