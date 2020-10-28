@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creation of a web page in HTML having a white background pand two button objects.</title>
+	<link rel="stylesheet" type="text/css" href="assignment 7.css">
+</head>
+<body>
+<h2>Creation of a web page in HTML having a white background and two button objects.</h2>
+<div id="back">
+	</div>
+	<button id="switch-color" onmouseover="Onhover()" onmouseout="movePointer()">Switch color</button>
+	<button id="show-message" onclick="showmessage()">Show message</button>
+	<p id="counseconds"></p>
+
+
+	<script type="text/javascript">
+		var color = ["#32a852", "#32a8a0", "#eeff00", "#a32a2a", "#2a2aa3", "#89a32a", "#a36d2a"];
+		function Onhover()
+		{
+			var Switch = setInterval(switchcolor, 6000);
+		var i = 0; 
+			function switchcolor(){
+				i = i < color.length ? ++i : 0;
+				document.querySelector("body").style.background = color[i]
+			}
+
+
+			const startingMinutes = 10;
+		let time = startingMinutes * 60;
+
+		const countdownEl = document.getElementById('counseconds');
+
+
+		setInterval(updateCountdown, 1000);
+
+
+		function updateCountdown() {
+			const minutes = Math.floor(time / 60);
+			let seconds = time % 6;
+
+
+			seconds = seconds < 10 ? '0' + seconds : seconds;
+
+			countdownEl.innerHTML = `${seconds}`;
+			time--;
+		}
+		}
+		function showmessage()
+		{
+			window.status("Show some message in the status bar!");
+		}
+		/*var i = 0;
+		var j = 0;
+		function divchange()
+		{
+			var bodytag = document.querySelector("body");
+			var bgcolor = {"purple", "yellow", "blue", "brown"};
+			var textcolor = {"red", "black", "gray", "yellow"};
+			i = (i + 1) % bgcolor.length;
+			j = (j = 1) % textcolor.length;
+		}
+		setInterval(divchange.5000);*/
+	</script>
+</body>
+</html>
