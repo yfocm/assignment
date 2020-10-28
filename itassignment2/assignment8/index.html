@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creation of a Javascript program for the following form validation</title>
+</head>
+<body>
+<h2>Creation of a Javascript program for the following form validation</h2>
+
+<h2>Information Form</h2>
+<form name="f1">
+	<label for="name">Your Name</label>
+	<input type="text" name="name" id="name" required><br>
+	<label for="address">Address</label>
+	<textarea placeholder="permanent address" required></textarea><br>
+	<label for="contact">Contact</label>
+	<input type="tel" name="contact" id="contact" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email" required><br>
+	<button id="submit" onclick="validate(str)">Submit</button>
+
+
+	<script type="text/javascript">
+		function validate(str) {
+				var format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				var str = document.f1.email.value;
+				if(format.test(str))
+				{
+					alert("Valid email address!")
+				}
+				else
+				{
+					alert("You have entered an invalid emial address!")
+				}
+			}
+
+	</script>
+</form>
+</body>
+</html>
