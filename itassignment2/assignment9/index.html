@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Creation of an event driven Javascript program for the program</title>
+</head>
+<body>
+<h2>To accept string from user and count number of vowels in the given string.</h2>
+
+
+<script type="text/javascript">
+	var str
+	function vowel(str)
+	{
+		var vowel_list = 'aeiouAEIOU';
+		var vcount = 0;
+
+		for(var i = 0; i < str.length ; i++)
+		{
+			if (vowel_list.indexOf(str[i]) !== -1)
+			{
+				vcount += 1;
+			}
+		}
+		return vcount;
+	}
+	let string = prompt("Type A Word!")
+
+
+	let result = vowel(string);
+
+
+	document.write(result);
+</script>
+</body>
+</html>
