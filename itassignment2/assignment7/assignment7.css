@@ -1,0 +1,29 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: #222f3e;
+	animation: bgcolor infinite 20s;
+}
+button
+{
+	position: relative;
+	padding: 10px;
+	background: #fff;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+p
+{
+	position: relative;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	font-size: 50px;
+	text-align: center;
+	height: 70px;
+	width: 200px;
+}
