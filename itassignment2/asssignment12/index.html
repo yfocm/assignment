@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Writing a PHP function to count the total number of vowels (a,e,i,o,u)</title>
+</head>
+<body>
+<h2>Writing a PHP function to count the total number of vowels (a,e,i,o,u).</h2>
+
+
+<?php
+function countVowels($string)
+{
+	preg_match_all('/[aeiou]/i', $string, $matches);
+	return count($matches[0]);
+}
+print_r(count_Vowels('sampleInput'));
+?>
+</body>
+</html>
